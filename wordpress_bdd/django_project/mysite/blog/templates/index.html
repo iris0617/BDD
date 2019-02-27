@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block content %}
+{% for blog in blogs %}
+    <h2>{{blog.title}}</h2>
+    <p>{{blog.timestamp}}</p>
+    <p>{{blog.body}}</p>
+{% endfor %}
+{% endblock %}
+</body>
+</html>
